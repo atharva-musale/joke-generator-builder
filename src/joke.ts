@@ -28,11 +28,11 @@ export default createBuilder((options: Options, context: BuilderContext) => {
   context.logger.info('Builder execution has started');
   let path = '';
   if (options.knockKnock) {
-    path = `${getSystemPath(noCacheNormalize(context.workspaceRoot))}/knock-knock.json`;
+    path = `${getSystemPath(noCacheNormalize(context.workspaceRoot))}/public/knock-knock.json`;
     context.logger.info(path);
     fs.writeFile(path, JSON.stringify(JOKES.knockKnock))
   } else if (options.general) {
-    path = `${getSystemPath(noCacheNormalize(context.workspaceRoot))}/general-joke.json`;
+    path = `${getSystemPath(noCacheNormalize(context.workspaceRoot))}/public/general-joke.json`;
     context.logger.info(path);
     fs.writeFile(path, JSON.stringify(JOKES.general))
   } else {
