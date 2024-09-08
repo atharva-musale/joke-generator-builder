@@ -1,0 +1,9 @@
+{
+  "builders": {
+    "generate": {
+      "description": "Generates jokes",
+      "implementation": "./dist/joke.js",
+      "schema": "./src/schema.json"
+    }
+  }
+}
