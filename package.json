@@ -7,14 +7,12 @@
   "author": "Atharva Musale",
   "license": "ISC",
   "scripts": {
-    "build": "rimraf .dist && tsc",
-    "postbuild": "copyfiles --up 1 .src/**.json ./dist"
+    "build": "rimraf .dist && tsc"
   },
   "dependencies": {
     "@angular-devkit/architect": "^0.1802.3",
     "@angular-devkit/core": "^18.2.3",
     "@types/node": "^22.5.4",
-    "copyfiles": "^2.4.1",
     "rimraf": "^6.0.1",
     "typescript": "^5.5.4"
   }

@@ -27,6 +27,7 @@ const JOKES = {
 export default createBuilder((options: Options, context: BuilderContext) => {
   context.logger.info('Builder execution has started');
   let path = '';
+
   if (options.knockKnock) {
     path = `${getSystemPath(noCacheNormalize(context.workspaceRoot))}/public/knock-knock.json`;
     context.logger.info(path);
@@ -43,7 +44,5 @@ export default createBuilder((options: Options, context: BuilderContext) => {
     }
   }
 
-  return {
-    success: true
-  }
+  return { success: true }
 });
