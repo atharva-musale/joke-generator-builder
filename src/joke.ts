@@ -13,7 +13,7 @@ interface Options extends JsonObject {
 const JOKES = {
   knockKnock: [{
     line1: 'Knock knock',
-    line2: 'Who?',
+    line2: 'Whos there?',
     line3: 'You know',
     line4: 'You know who',
     line5: 'Avada kadavara (Lord Voldemort, he who must not be named)'
